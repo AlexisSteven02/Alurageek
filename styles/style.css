@@ -1,0 +1,274 @@
+:root {
+    --color-primario: #174ebc;
+    --color-secundario: #a3a31c;
+    --color-terciario: #37dcc0;
+    --color-fondo: #f9f8c5;
+    --color-texto: #333;
+    --color-boton-enviar: #1469a2;
+    --color-boton-limpiar: #1469a2;
+    --color-fondomislibros: #eaf0f4;
+    --color-borde: #b99d47;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-size: 14px;
+}
+
+.encabezado,
+.pie_pagina {
+    background-color: var(--color-primario);
+    padding: 1em 0;
+    text-align: center;
+    background-size: 1000px;
+    background-position: center;
+    color: var(--color-texto);
+    font-size: larger;
+}
+
+.redes-sociales-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.redes-sociales-logo:hover {
+    transform: scale(1.5);
+}
+
+.titulo_encabezado_pie_de_pagina {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.main-contenido {
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+}
+
+.section-productos,
+.section-formulario {
+    width: 50%;
+    padding: 2em;
+    margin: 0 auto; /* Centrar las secciones */
+}
+
+.section-productos {
+    text-align: center;
+    background-color: var(--color-fondo);
+    padding: 1em; /* Reducir padding lateral */
+}
+
+.section-formulario {
+    background-color: var(--color-secundario);
+}
+
+.titulo-productos {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.titulo-formulario {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.producto-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Reducir gap entre elementos */
+    padding: 10px; /* Reducir padding del contenedor */
+    background-color: var(--color-fondomislibros);
+    border: 10px solid var(--color-borde);
+    overflow-y: auto;
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.libro-item {
+    position: relative;
+    background-color: var(--color-terciario);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.libro-imagen {
+    width: 100%;
+    height: 250px; /* Reducir altura de la imagen */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.libro-descripcion {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-texto);
+    text-align: center;
+}
+
+.libro-autor {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-secundario);
+    text-align: center;
+}
+
+.libro-precio {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-primario);
+}
+
+.icono-borrar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.icono-borrar:hover .icono-basurero img,
+.icono-borrar:active .icono-basurero img {
+    transform: scale(1.2);
+    color: red;
+}
+
+.icono-basurero img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s;
+}
+
+.boton-enviar,
+.boton-limpiar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.boton-enviar {
+    background-color: var(--color-boton-enviar);
+    color: white;
+}
+
+.boton-enviar:hover,
+.boton-enviar:active {
+    background-color: darkgreen;
+    transform: scale(1.1);
+}
+
+.boton-limpiar {
+    background-color: var(--color-boton-limpiar);
+    color: white;
+}
+
+.boton-limpiar:hover,
+.boton-limpiar:active {
+    background-color: darkred;
+    transform: scale(1.1);
+}
+
+.formulario-agregar-producto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.input-producto {
+    height: 40px;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+.motivational-quote {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.5;
+    color: var(--color-texto);
+    background-image: url('https://img.freepik.com/fotos-premium/textura-papel-fondos-pagina-libro-antiguo_180633-2925.jpg?w=360');
+    background-size: cover;
+    background-position: unset;
+    border-radius: 10px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .main-contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-productos,
+    .section-formulario {
+        width: 90%;
+        padding: 1em; /* Reducir padding lateral */
+    }
+
+    .producto-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0.5em; /* Reducir padding del contenedor */
+        gap: 10px; /* Reducir gap entre elementos */
+    }
+
+    .libro-imagen {
+        height: 200px; /* Reducir altura de la imagen */
+    }
+
+    .motivational-quote {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .titulo_encabezado_pie_de_pagina {
+        font-size: 30px;
+    }
+
+    .titulo-productos,
+    .titulo-formulario {
+        font-size: 20px;
+    }
+
+    .producto-container {
+        grid-template-columns: repeat(2, 1fr); /* Siempre dos columnas */
+        padding: 0.5em; /* Reducir padding del contenedor */
+        gap: 10px; /* Reducir gap entre elementos */
+    }
+
+    .libro-imagen {
+        height: 180px; /* Reducir altura de la imagen */
+    }
+
+    .motivational-quote {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+}

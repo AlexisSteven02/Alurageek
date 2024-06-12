@@ -1,0 +1,67 @@
+ {
+    "libros": [
+        {
+            "id": "1",
+            "titulo": "Cien Años de Soledad",
+            "autor": "Gabriel García Márquez",
+            "precio": 15,
+            "imagen": "imagenes/soledad.jpg"
+          },
+          {
+            "id": "2",
+            "titulo": "Don Quijote de la Mancha",
+            "autor": "Miguel de Cervantes",
+            "precio": 20,
+            "imagen": "imagenes/donquijote.jpg"
+          },
+          {
+            "id": "3",
+            "titulo": "El Principito",
+            "autor": "Antoine de Saint-Exupéry",
+            "precio": 10,
+            "imagen": "imagenes/principito.jpg"
+          },
+          {
+            "id": "4",
+            "titulo": "1984",
+            "autor": "George Orwell",
+            "precio": 18,
+            "imagen": "imagenes/1984.jpg"
+          },
+          {
+            "id": "5",
+            "titulo": "Matar a un Ruiseñor",
+            "autor": "Harper Lee",
+            "precio": 12,
+            "imagen": "imagenes/ruiseñor.jpg"
+          },
+          {
+            "id": "6",
+            "titulo": "Orgullo y Prejuicio",
+            "autor": "Jane Austen",
+            "precio": 14,
+            "imagen": "imagenes/orgullo y prejuicio.jpg"
+          },
+          {
+            "id": "7",
+            "titulo": "Crimen y Castigo",
+            "autor": "Fiódor Dostoyevski",
+            "precio": 17,
+            "imagen": "imagenes/crimen y castigo.jpg"
+          },
+          {
+            "id": "8",
+            "titulo": "La Odisea",
+            "autor": "Homero",
+            "precio": 19,
+            "imagen": "imagenes/odisea.jpg"
+          },
+          {
+            "id": "9",
+            "titulo": "El Gran Gatsby",
+            "autor": "F. Scott Fitzgerald",
+            "precio": 16,
+            "imagen": "imagenes/el gran gatzby.jpg"
+          }
+    ]
+}

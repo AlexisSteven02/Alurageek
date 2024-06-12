@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colección de Libros</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="encabezado" style="background-image: url('imagenes/letras.jpg');">
+        <h1 class="titulo_encabezado_pie_de_pagina">Alura Geek</h1>
+    </header>
+    <main class="main-contenido">
+        <section class="section-productos">
+            <div class="libros-background">
+                <h2 class="titulo-productos">Mis Libros</h2>
+                <div class="producto-container" data-libro></div>
+            </div>
+        </section>
+        <section class="section-formulario">
+            <h2 class="titulo-formulario">Añadir Libro</h2>
+            <form class="formulario-agregar-producto" data-form>
+                <input name="titulo" id="titulo" placeholder="Título del libro" type="text" class="input-producto" data-titulo required>
+                <input name="autor" id="autor" placeholder="Autor del libro" type="text" class="input-producto" data-autor required>
+                <input name="precio" id="precio" placeholder="Precio del libro" type="text" class="input-producto" data-precio required>
+                <input name="imagen" id="imagen" placeholder="URL de la imagen" type="text" class="input-producto" data-imagen required>
+                <div class="formulario-botones">
+                    <button type="submit" class="boton-enviar">Agregar</button>
+                    <button type="button" class="boton-limpiar" onclick="this.form.reset();">Limpiar</button>
+                </div>
+            </form>
+            <div class="motivational-quote">
+                <p>"La lectura es para la mente lo que el ejercicio es para el cuerpo. Es una forma de explorar, soñar y descubrir nuevos mundos, todo desde la comodidad de tu sillón favorito."</p>
+            </div>
+        </section>
+    </main>
+    <footer class="pie_pagina" style="background-image: url('imagenes/letras.jpg');">
+        <p>&copy; 2024 Alexis Steven Palomino Almeyda</p>
+        <div class="footer-logo-container">
+            <a href="https://github.com/AlexisSteven02" target="_blank">
+                <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/github.png" alt="github" class="redes-sociales-logo">
+            </a>
+        </div>
+    </footer>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
